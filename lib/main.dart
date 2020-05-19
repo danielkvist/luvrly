@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:luvrly/screens/splash_screen.dart';
 
 void main() {
   runApp(LuvrlyApp());
@@ -14,7 +15,7 @@ class LuvrlyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(),
+      home: CustomSplashScreen(),
     );
   }
 }
