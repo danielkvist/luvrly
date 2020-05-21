@@ -14,6 +14,7 @@ class LuvrlyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.pink,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        canvasColor: Colors.transparent,
       ),
       home: CustomSplashScreen(),
     );

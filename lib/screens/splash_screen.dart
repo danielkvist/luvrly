@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:splashscreen/splashscreen.dart';
+import 'package:luvrly/screens/lovers_name_screen.dart';
 
 class CustomSplashScreen extends StatefulWidget {
   @override
@@ -12,7 +13,7 @@ class _CustomSplashScreenState extends State<CustomSplashScreen> {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 3,
-      navigateAfterSeconds: Scaffold(),
+      navigateAfterSeconds: LoversNameScreen(),
       title: Text(
         '\nLuvrly',
         style: GoogleFonts.pacifico(
@@ -21,7 +22,6 @@ class _CustomSplashScreenState extends State<CustomSplashScreen> {
           color: Colors.white,
         ),
       ),
-      onClick: () => print("Flutter Egypt"),
       loaderColor: Colors.white,
       loadingText: Text(
         'Love like you\'ll never be hurt.',
