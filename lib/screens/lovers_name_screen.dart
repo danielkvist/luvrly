@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:luvrly/widgets/lovers_form.dart';
+import 'package:luvrly/screens/result_screen.dart';
 
 class LoversNameScreen extends StatefulWidget {
   @override
@@ -48,6 +49,31 @@ class _LoversNameScreenState extends State<LoversNameScreen> {
                   textInputpadding: [25.0, 25.0, 95.0, 0],
                   onSubmitLoverName: (String name) =>
                       {setState(() => secondLoverName = name)},
+                ),
+              ),
+            ),
+            AnimatedOpacity(
+              opacity: firstLoverName != "" && secondLoverName != "" ? 1.0 : 00,
+              duration: Duration(milliseconds: 500),
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: FloatingActionButton(
+                    child: Icon(Icons.arrow_forward),
+                    tooltip: 'View compability',
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ResultScreen(
+                            firstLoverName: firstLoverName,
+                            secondLoverName: secondLoverName,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
                 ),
               ),
             ),
