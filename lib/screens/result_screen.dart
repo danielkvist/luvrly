@@ -1,9 +1,9 @@
 import 'dart:math';
+import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flare_flutter/flare_controls.dart';
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:luvrly/screens/lovers_name_screen.dart';
+import 'package:luvrly/widgets/animated_percentage.dart';
 
 class ResultScreen extends StatefulWidget {
   final String firstLoverName;
@@ -24,9 +24,7 @@ class _ResultScreenState extends State<ResultScreen>
   FlareControls _flareControls = FlareControls();
   int _result;
 
-  void _playFlareAnimation() {
-    _flareControls.play('go');
-  }
+  void _playFlareAnimation() => {_flareControls.play('go')};
 
   void _calculateResult() {
     setState(() {
@@ -129,24 +127,5 @@ class _ResultScreenState extends State<ResultScreen>
   void dispose() {
     _controller.dispose();
     super.dispose();
-  }
-}
-
-class AnimatedPercentage extends AnimatedWidget {
-  AnimatedPercentage({Key key, this.animation})
-      : super(key: key, listenable: animation);
-
-  final Animation<int> animation;
-
-  @override
-  build(BuildContext context) {
-    return Text(
-      '${animation.value.toString()}%',
-      style: GoogleFonts.pacifico(
-        fontSize: 72.0,
-        fontWeight: FontWeight.normal,
-        color: Colors.white,
-      ),
-    );
   }
 }

@@ -57,7 +57,7 @@ class _LoversNameFormState extends State<LoversNameForm>
           color: Colors.grey[50],
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.5),
+              color: Colors.grey[500].withOpacity(0.5),
               spreadRadius: 5,
               blurRadius: 7,
               offset: Offset(0, 3), // changes position of shadow
@@ -85,7 +85,7 @@ class _LoversNameFormState extends State<LoversNameForm>
               hintText: 'Name',
             ),
             onFieldSubmitted: (value) {
-              if (value.length >= 3) {
+              if (value.length >= 1) {
                 widget.onSubmitLoverName(value);
               }
             },
