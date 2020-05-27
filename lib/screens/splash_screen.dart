@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:luvrly/screens/lovers_name_screen.dart';
 
@@ -16,9 +15,10 @@ class _CustomSplashScreenState extends State<CustomSplashScreen> {
       navigateAfterSeconds: LoversNameScreen(),
       title: Text(
         '\nLuvrly',
-        style: GoogleFonts.pacifico(
+        style: TextStyle(
           fontSize: 72.0,
           fontWeight: FontWeight.normal,
+          fontFamily: 'Pacifico',
           color: Colors.white,
         ),
       ),
