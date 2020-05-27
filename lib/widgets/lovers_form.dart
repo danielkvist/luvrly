@@ -30,7 +30,7 @@ class _LoversNameFormState extends State<LoversNameForm>
   @override
   void initState() {
     _controller = AnimationController(
-      duration: const Duration(seconds: 1),
+      duration: const Duration(milliseconds: 500),
       vsync: this,
     )..forward();
     _offsetAnimation = Tween<Offset>(
