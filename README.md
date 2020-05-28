@@ -1,16 +1,22 @@
-# luvrly
+# Luvrly - Love Calculator
 
-A new Flutter project.
+Luvrly is a minimalist and stylish love calculator made with Flutter.
 
-## Getting Started
+## For learning!
 
-This project is a starting point for a Flutter application.
+Luvrly is an application made for the pleasure of learning. If you want to review the source code you'll find out how to do things like:
 
-A few resources to get you started if this is your first Flutter project:
+- Basic navigation in Flutter.
+- Widget reutilization and basic communication between widgets.
+- Custom fonts in Flutter.
+- Basic tween animations with Flutter.
+- Basic animations with Flare.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Screenshots
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div style="display: flex; flex-wrap: wrap;">
+  <img src="https://raw.githubusercontent.com/danielkvist/luvrly/master/screenshots/splash_screen.png" alt="Splash screen" width="250" />
+  <img src="https://raw.githubusercontent.com/danielkvist/luvrly/master/screenshots/user_form_1.png" alt="User form" width="250" />
+  <img src="https://raw.githubusercontent.com/danielkvist/luvrly/master/screenshots/user_form_2.png" alt="Two names user form" width="250" />
+  <img src="https://raw.githubusercontent.com/danielkvist/luvrly/master/screenshots/result_screen.png" alt="Result screen" width="250" />
+</div>
