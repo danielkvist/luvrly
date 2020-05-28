@@ -6,10 +6,10 @@ Luvrly is a minimalist and stylish love calculator made with Flutter.
 
 Luvrly is an application made for the pleasure of learning. If you want to review the source code you'll find out how to do things like:
 
-- Basic navigation in Flutter.
 - Widget reutilization and basic communication between widgets.
+- Basic navigation in Flutter.
 - Custom fonts in Flutter.
-- Basic tween animations with Flutter.
+- Basic tween animations in Flutter.
 - Basic animations with Flare.
 
 ## Screenshots
